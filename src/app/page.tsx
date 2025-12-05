@@ -1,66 +1,40 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import HeroSection from "@/components/HeroSection";
+import TrustBar from "@/components/TrustBar";
+import PlainSection from "@/components/PlainSection";
+import BeforeAfterSection from "@/components/BeforeAfterSection";
+import WhyDifferentSection from "@/components/WhyDifferentSection";
+import EngineSection from "@/components/EngineSection";
+import MetricsSection from "@/components/MetricsSection";
+import PricingSection from "@/components/PricingSection";
+import AdmissionsSection from "@/components/AdmissionsSection";
+import First30DaysSection from "@/components/First30DaysSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FounderSection from "@/components/FounderSection";
+import FAQSection from "@/components/FAQSection";
+import FinalCTASection from "@/components/FinalCTASection";
+import Footer from "@/components/Footer";
+import PAPSection from "@/components/PAPSection";
 
-export default function Home() {
+
+export default function HomePage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="bg-bg-deep text-white">
+      <HeroSection />
+      <TrustBar />
+      <PlainSection />
+      <BeforeAfterSection />
+      <WhyDifferentSection />
+      <EngineSection />
+      <MetricsSection />
+      <PricingSection />
+      <PAPSection />
+      <AdmissionsSection />
+      <First30DaysSection />
+      <TestimonialsSection />
+      <FounderSection />
+      <FAQSection />
+      <FinalCTASection />
+      <Footer />
+    </main>
   );
 }
